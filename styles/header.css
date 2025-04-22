@@ -67,6 +67,18 @@
     display: none;
 }
 
+.container__rotulo {
+    padding: 1em;
+}
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer{
+    background-image: url("../assets/MenuAberto.svg");
+
+}
+
+.container__botao:checked~.container__rotulo {
+    background: blue;
+}
+
 @media screen and (min-width: 1024px) {
 
     .container__titulo, .container__titulo--negrito {
@@ -112,6 +124,22 @@
     }
 
 
+    .opcoes__botao:checked~.opcoes__rotulo>.opcoes__item {
+        background-color: blue;
+        color: white;
+    }
+    .opcoes__item {
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover {
+        background: blue;
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: white;
+        text-decoration: none;
+    }
 }
 
 @media screen and (min-width: 1728px) {
